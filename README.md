@@ -12,7 +12,7 @@ Este projeto utiliza o Terraform para provisionar uma infraestrutura básica na 
 
 * `main.tf`: Declaração dos recursos (EC2, S3, Security Group e Data Source da AMI).
 * `variables.tf`: Definição das variáveis do projeto (região, tipo de instância, etc).
-* `terraform.tfvars`: Valores atribuídos às variáveis (customizável).
+
 
 ## 🛠️ Pré-requisitos
 

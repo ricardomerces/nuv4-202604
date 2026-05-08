@@ -1,0 +1,33 @@
+# --- TERRAFORM .GITIGNORE ---
+
+# Ficheiro de atribuição de variáveis (CONTÉM SEGREDOS)
+# Este ficheiro nunca deve ser enviado para o sistema de controlo de versões
+terraform.tfvars
+*.tfvars
+*.tfvars.json
+
+# Diretório de trabalho do Terraform (contém plugins binários e módulos descarregados)
+.terraform/
+
+# Ficheiros de estado (contêm o mapeamento da infraestrutura e dados sensíveis em texto simples)
+*.tfstate
+*.tfstate.*
+
+# Ficheiros de plano de execução
+# Podem conter segredos que serão aplicados à infraestrutura
+*.tfplan
+
+# Ficheiros de log e crash
+*.log
+crash.log
+crash.*.log
+
+# Ficheiros de override (configurações locais que não devem ser partilhadas)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Configurações da CLI do Terraform
+.terraformrc
+terraform.rc

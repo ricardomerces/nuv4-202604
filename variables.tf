@@ -27,3 +27,15 @@ variable "volume_size" {
   type        = number
   default     = 8
 }
+
+variable "aws_access_key" {
+  description = "AWS Access Key"
+  type        = string
+  sensitive   = true # Evita que o valor apareça nos logs do terminal
+}
+
+variable "aws_secret_key" {
+  description = "AWS Secret Key"
+  type        = string
+  sensitive   = true
+}

@@ -8,8 +8,11 @@ terraform {
 }
 
 provider "aws" {
-  region = var.region
+  access_key = var.aws_access_key
+  secret_key = var.aws_secret_key
+  region     = var.region
 }
+
 
 # Busca a AMI mais recente do Ubuntu 26.04 LTS
 data "aws_ami" "ubuntu_26" {
